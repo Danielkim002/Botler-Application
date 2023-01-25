@@ -1,0 +1,70 @@
+body {
+    background-image: url(Background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    text-align:center;
+    color: white;
+} 
+
+.main {
+    background-color: black;
+    border: 8px double white;
+    border-radius: 16px;
+    max-width: 400px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.form-control input {
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 3px double white;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media(max-width:700px) {
+    .form-control, .main {
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+}
+
+
