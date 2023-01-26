@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename=css_file)}}">
+    
+    <title>Botler Response</title>
+</head>
+<body>
+    <div class="main">
+        <h1>__text__</h1>
+
+        <textarea id="text-box" rows="10" cols="50" >{{user_data}}</textarea>
+
+        <form action="/ret" method="post">
+            <button type="submit" id="return">Return</button>
+        </form>
+
+        
+        <button type="submit" id="save-button" onclick="saveToClipboard()">Save to clipboard</button>
+        
+
+        
+
+    </div>
+    
+</body>
+<script>
+    function saveToClipboard() {
+        var text = document.getElementById("text-box").value;
+        navigator.clipboard.writeText(text);
+        alert("Text has been copied to clipboard!");
+    }
+</script>
+</html>

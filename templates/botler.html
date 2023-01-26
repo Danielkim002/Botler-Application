@@ -22,9 +22,16 @@
 </form>
     <h1>Test</h1>
     <h2>Test 2</h2>
-    <textarea id="text-box" rows="10" cols="50"></textarea>
-    <br>
-    <button id="test-button">Test 3</button>
+    <form action="/result" method="post">
+        <select name="dropdown">
+            <option value="1">blub fub crub</option>
+            <option value="2">blub blub wub</option>
+          </select>
+
+        <textarea id="text-box" name="text-box"rows="10" cols="50"></textarea>
+        <br>
+        <button type="submit" id="test-button">Test 3</button>
+    </form>
+    
 </body>
-<script src="botler.js" defer></script>
 </html>

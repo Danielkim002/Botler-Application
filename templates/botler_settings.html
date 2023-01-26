@@ -15,27 +15,27 @@
         <form method="POST" action="{{ url_for('save') }}">
             <div class="form-control">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" value="{{user_data.get('Name')}}">
             </div>
 
             <div class="form-control">
                 <label for="academic-history">Academic History:</label>
-                <input type="text" id="academic-history" name="academic-history">
+                <input type="text" id="academic-history" name="academic-history" value="{{user_data.get('Academic History')}}">
             </div>
 
             <div class="form-control">
                 <label for="experience">Experience:</label>
-                <input type="text" id="experience" name="experience">
+                <input type="text" id="experience" name="experience" value="{{user_data.get('Experience')}}">
             </div>
 
             <div class="form-control">
                 <label for="interests">Interests:</label>
-                <input type="text" id="interests" name="interests">
+                <input type="text" id="interests" name="interests" value="{{user_data.get('Interests')}}">
             </div>
 
             <div class="form-control">
                 <label for="facts-to-consider">Facts to consider:</label>
-                <input type="text" id="facts-to-consider" name="facts-to-consider">
+                <input type="text" id="facts-to-consider" name="facts-to-consider" value="{{user_data.get('Facts to Consider')}}">
             </div>
 
             <div class="form-control">
