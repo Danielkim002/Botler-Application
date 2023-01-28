@@ -124,3 +124,69 @@ At avywavybavy, I would be able to utilize my skills and knowledge to contribute
 Thank you for your time and consideration; please do not hesitate to contact me if you have any questions or need any additional information from me. I look forward to hearing from you soon about this exciting opportunity!
 
 =============================================
+[2023-01-27 19:54:04]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
+
+
+ Using my information above answer the question below in the way you think I would.answer. 
+ 
+ Why are you interested in space industrialization?
+
+[response]
+ 
+
+I am interested in space industrialization because I believe it to be the future of humanity. With space industrialization, we will be able to mine resources from asteroids and other planets, which will help us sustain our civilization for centuries to come. Additionally, I believe that space industrialization will help us unlock new technologies and possibilities that we can't even imagine right now.
+
+=============================================
+[2023-01-27 19:55:03]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
+
+
+ Using my information above write a cover letter for the job described below.You do not need to use all of the information provided, and do not make any assumptions about my skill level or qualifications for the described job. When writing the cover letterplease make sure to have good cover letter etiquette .
+
+why should we choose you as our computer architect
+
+[response]
+ ?
+
+Dear hiring manager,
+
+I am writing in regards to the computer architect position that you have posted. Based on the job description, I believe that I have the skills and qualifications that you are looking for. I am confident in my ability to learn fast and would be a great asset to your team.
+
+As a recent graduate of WGU with a B.S. in Computer Science, I have the knowledge and foundation needed for this role. In addition, I am very interested in AI, Machine learning and Data Analysis which makes me even more qualified for this job. I would love the opportunity to put my skills to use and contribute to your company's success.
+
+Thank you for your time and consideration, and I look forward to hearing from you soon.
+
+=============================================
+[2023-01-27 19:55:31]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
+
+
+ Using my information above answer the question below in the way you think I would.answer. 
+ 
+ Why should we choose you as our computer architecht
+
+[response]
+ ?
+
+I believe that I would be a great choice as your computer architect because of my academic history and my interests. I am confident in my ability to learn fast, which means that I can quickly adapt to new technologies. Additionally, my interests lie in areas that are relevant to the job, such as AI, machine learning, and data analysis.
+
+=============================================

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import datetime
 
 import openai
-openai.api_key = "never share your api key"
+openai.api_key = "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"
 app = Flask(__name__)
 
 @app.route('/')
@@ -77,7 +77,19 @@ def result():
         )
 
     elif selected_value == "2":
-        input += "selected option was 2"
+        input += ("My Information:\n" + user_data 
+                   + "\n\n Using my information above answer the question below in the way you think I would."
+                   + "answer. \n \n " + request_information)
+                   
+        response = openai.Completion.create(
+            prompt = input,
+            model = 'text-davinci-002',
+            temperature = 0.5,
+            max_tokens = 3000,
+            top_p = 1,
+            frequency_penalty = 1,
+            presence_penalty = 1
+        )
     
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open("generated_response.txt", "a") as f:
