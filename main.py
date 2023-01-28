@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import datetime
 
 import openai
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "never share your api key"
 app = Flask(__name__)
 
 @app.route('/')
@@ -30,36 +30,61 @@ def settings():
 '''
 response = openai.Completion.create(
     prompt='Write a cover letter for a job in data science',
-    model='text-davinci-002',
-    temperature=0.5, #this is the creativity of the generated text, from 0 dry cardboard to 1 wedding cake
-    max_tokens=3000, #this paramater is the length of the generated text
-    top_p=1, #this paramer helps generate more coherent and meaninful text at the detriment of creativity 0 uncoherent very creative 1 not as creative but more coherent
-    frequency_penalty=1, #this parameter penalizes tokens that are similar even if they have high penatly, 0 no penalty for repeats, 1 generate less frequent and rarer tokens
 
-    presence_penalty=1  # 0 dont penalize for generating tokens present in input, 1 penalize for generating tokens present in input
+    model='text-davinci-002',
+    
+    temperature=0.5, #this is the creativity of the generated text, from 0 dry cardboard to 1 wedding cake
+
+    max_tokens=3000, #this paramater is the length of the generated text
+
+    top_p=1, #this paramer helps generate more coherent and meaninful text at the 
+            detriment of creativity 0 uncoherent very creative 1 not as creative but more coherent
+
+    frequency_penalty=1, #this parameter penalizes tokens that are similar even if
+         they have high penatly, 0 no penalty for repeats, 1 generate less frequent and rarer tokens
+
+    presence_penalty=1  # 0 dont penalize for generating tokens present in input, 
+                           1 penalize for generating tokens present in input
 )
 
 generated_text = response.choices[0].text
 '''
 @app.route("/result", methods=["POST"])
 def result():
+    input = ""
+    
     with open("user_data.txt") as f:
         user_data = f.read()
     
-    user_data += request.form.get('text-box')
-    text_box = request.form.get('text-box')
+    request_information = request.form.get('text-box')
+    
     selected_value = request.form.get('dropdown')
+    #If this option is selected then the user wants the botler to write a cover letter for them
     if selected_value == "1":
-        user_data += "selected option was 1"
+        input += ("My Information:\n" + user_data 
+                   + "\n\n Using my information above write a cover letter for the job described below."
+                   + "You do not need to use all of the information provided, and do not make any assumptions "
+                   + "about my skill level or qualifications for the described job. When writing the cover letter"
+                   + "please make sure to have good cover letter etiquette .\n\n" + request_information)
+        response = openai.Completion.create(
+            prompt = input,
+            model = 'text-davinci-002',
+            temperature = 0.5,
+            max_tokens = 3000,
+            top_p = 1,
+            frequency_penalty = 1,
+            presence_penalty = 1
+        )
+
     elif selected_value == "2":
-        user_data += "selected option was 2"
+        input += "selected option was 2"
     
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open("generated_response.txt", "a") as f:
         f.write(f"[{current_time}]\n")
-        f.write(f"[text_box] \n{text_box}\n\n")
-        f.write(f"[user_data]\n {user_data}\n\n=============================================\n")
-    return render_template('result.html',user_data = user_data)
+        f.write(f"[prompt]\n{input}\n\n")
+        f.write(f"[response]\n {response.choices[0].text}\n\n=============================================\n")
+    return render_template('result.html',user_data = response.choices[0].text)
 
 @app.route('/ret', methods=['POST'])
 def ret():
