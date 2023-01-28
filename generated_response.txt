@@ -1,103 +1,126 @@
-[2023-01-26 16:32:39]
-[text_box] text box
-[user_data] Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-text boxselected option was 1
-[2023-01-26 16:34:10]
-[text_box] text box
-[user_data] Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-text boxselected option was 1
-[2023-01-26 16:34:28]
-[text_box] 
-text box
 
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-text boxselected option was 1
+[2023-01-27 17:48:42]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
 
-[2023-01-26 16:34:53]
-[text_box] 
-text box
 
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-text boxselected option was 1
+ Using my information above write a cover letter for the job described below.You do not need to use all of the information provided, and do not make any assumptions about my skill level or qualifications for the described job. When writing about myexperience only use my information provided.
 
-[2023-01-26 16:35:12]
-[text_box] 
-test
+e Planetary Mass Spectrometer Group seeks a self-motivated individual who can work well in the laboratory independently and in a team environment. The selected candidate will have the opportunity to contribute in both ground-based and space-based research for general mass spectroscopy in combination with geochemistry, isotope geochemistry, chromatography, cosmo-chemistry, absorption/emission spectroscopy, and astrobiology as an in-situ Technologist level 2 in the following ways:
+
+To work on technology development tasks such as the Spacecraft Atmosphere Monitor (S.A.M) instrument, which is used on board the International Space Station.
+Be responsible for performing calibration and instrument development within the areas of mass spectroscopy, gas chromatography
+To contribute on new technology infusions for novel instrumentation applied to future planetary and human exploration.
+Such as instruments to the Lunar surface or atmosphere of Venus.
+Writes and contributed to proposals to obtain funding for future technology developments.
+To create and fulfill opportunities to design, develop, document, implement, and verify new technologies for mass spectrometer instruments from the breadboard throughout the flight implementation phase.
+To identify new scientific questions and issues, apply theoretical principles, and use creative analytical, experimental techniques, and scientific methods to develop new technology and instrument opportunities.
+To establish and verify models of instrument properties in support of design, calibration, and performance verification.
+Works independently on high visibility assignments and projects with only limited supervision, typically receiving only general instructions.
+Exercises discretion and independent judgment to compare and evaluate various methods, approaches, resources and decide which will best accomplish each aspect of such assignments with the agreement of the project management.
+To publish technology and science results at conferences and peer-reviewed periodicals.
+Qualifications
+
+Exceptional interest in;
+Developing mass spectrometer based instrumentation to support human space flight missions
+Developing new technologies to develop new systems and applying them to address novel science questions.
+Strong interest working from conception through flight delivery, for mass spectroscopy, chromatography, fields and charged particles projects.
+Bachelor’s degree in physics, analytical chemistry or related technical disciplines with 3 years of related experience; or Master’s degree in similar disciplines with 1 year of related experience; or PhD with 0 years in related fields.
+An understanding of the principles, theories, concepts, and techniques into instrument design principles.
+Hands-on and understanding of instrument related subsystems, e.x., vacuum systems and their components, RF and high voltage electronics circuits, control software, and data extraction.
+Knowledge on how to derive science requirements and their implementation and verification.
+Strong understanding of system engineering and development process.
+Strong interpersonal skills with demonstrated effectiveness in a team environment.
+Working closely with multiple science and engineering teams.
+Excellent written and verbal communications skills.
+Ability to present her/his work in peer and design cycle reviews.
+Ability to multi-task independently with an established track record of meeting milestone schedules.
+Extensive knowledge and demonstration of instrument building skills in one or more of the following areas: charged particle optics, mass spectroscopy, atomic and molecular physics, gas and/or liquid chromatography, absorption/emission spectroscopy, or micro-fabrication techniques.
+Demonstrated ability in how to design, fabricate, build, test, calibrate, and evaluate fully operational mass spectrometer systems.
+Extensive knowledge of one or more high-level general-purpose programming languages, such as C/C++, Linux, Java, Python, MATLAB, SIMION, COMSOL, and CAD drawing tools.
+Has advanced knowledge of applicable Laboratory policies and procedures, NASA policies and procedures, and government regulations.
+Ability to work well with cross-functional teams, design engineers, management, and other NASA centers.
+Contract Technical Management experience.
 
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-testselected option was 1
-
-=============================================[2023-01-26 16:35:21]
-[text_box] 
-text
-
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-textselected option was 1
-
-=============================================[2023-01-26 16:35:37]
-[text_box] 
-text
-
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-textselected option was 1
+[response]
+ {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nDear Planetary Mass Spectrometer Group,\r\n\r\nI am writing to apply for the position of Technologist Level 2 in your group. Based on my academic history and interests, I believe that I would be a valuable asset to your team. \r\n\r\nAs a recent graduate of WGU with a B.S. in Computer Science, I have the skills and knowledge necessary to contribute in both ground-based and space-based research tasks. My self-taught experience in python, java, and sql gives me the ability to work independently on high visibility assignments and projects with only limited supervision. In addition, my strong interpersonal skills allow me to work effectively in a team environment. \r\n\r\nI am confident that I can be an asset to your team and contribute to the development of new technologies for mass spectrometer instruments from the breadboard through the flight implementation phase. If given the opportunity, I will use my analytical skills and scientific methods to develop new technology opportunities and help answer novel science questions. \r\n\r\nThank you for your time and consideration,\r\nDaniel Kim"
+    }
+  ],
+  "created": 1674870512,
+  "id": "cmpl-6dUcSVYxYCOIRmo6EStWaS4EGAOwp",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 227,
+    "prompt_tokens": 976,
+    "total_tokens": 1203
+  }
+}
 
 =============================================
-[2023-01-26 16:35:41]
-[text_box] 
-test
+[2023-01-27 19:16:53]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
 
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-testselected option was 1
+
+ Using my information above write a cover letter for the job described below.You do not need to use all of the information provided, and do not make any assumptions about my skill level or qualifications for the described job. When writing about myexperience only use my information provided.
+
+I am applying for avywavybavy the software company in charge of the rebotics behind the Boxel Woxel. The position I am applying to requires 3 years of experience in c# however I do not have this experience, but i believe my experience in other programming languages would help me. The position I am applying to is software development.
+
+[response]
+ 
+
+Dear hiring manager,
+
+I am applying for the software development position at avywavybavy. I saw that the position requires 3 years of experience in c#, however I do not have this experience. However, I do have experience in other programming languages like python and java. I am confident that I can learn c# quickly and be an asset to your team. In addition, my interests in AI and machine learning would help me contribute to your company in a meaningful way. 
+
+I believe that my qualifications make me the ideal candidate for this position and I would appreciate the opportunity to discuss my application further with you. Thank you for your time and consideration. 
+
+Sincerely, 
+Daniel Kim
 
 =============================================
-[2023-01-26 16:35:56]
-[text_box] 
-test
+[2023-01-27 19:29:56]
+[prompt]
+My Information:
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
 
-[user_data]
- Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
-testselected option was 1
+
+ Using my information above write a cover letter for the job described below.You do not need to use all of the information provided, and do not make any assumptions about my skill level or qualifications for the described job. When writing the cover letterplease make sure to have good cover letter etiquette .
+
+I am applying for avywavybavy the software company in charge of the rebotics behind the Boxel Woxel. The position I am applying to requires 3 years of experience in c# I do not have this experience, but i believe my experience in other programming languages would help me. The position I am applying to is a software development position. the company culture emphasizes teamwork and trust based work
+
+
+[response]
+ 
+Dear hiring manager,
+
+I am writing to apply for the software development position at avywavybavy. I saw your posting on Indeed and believe that my skills and background make me the perfect candidate for the job.
+
+As a recent graduate of WGU with a B.S. in Computer Science, I have the theoretical knowledge and technical skills necessary for success in this role. In addition, I am confident in my ability to learn fast and adapt to new technologies quickly. Although I do not have professional experience specifically in c#, my self-taught experience in other programming languages such as python and java has given me the strong foundation needed to be successful in this role.
+
+At avywavybavy, I would be able to utilize my skills and knowledge to contribute to the team's success while also continuing to develop my abilities further. The company culture emphasizes teamwork and trust based work, which is something I value highly as it allows for more collaboration and creativity. I believe that as a member of the team at avywavybavy, I would be able to make significant contributions to your rebotics behind the Boxel Woxel project.
+
+Thank you for your time and consideration; please do not hesitate to contact me if you have any questions or need any additional information from me. I look forward to hearing from you soon about this exciting opportunity!
 
 =============================================

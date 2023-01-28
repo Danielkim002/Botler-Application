@@ -1,5 +1,5 @@
-Name: temp 1
-Academic History:  temp 2
-Experience:  temp 3
-Interests: temp 4
-Facts to Consider: temp 5
+Name: Daniel Kim
+Academic History:  Graduate from WGU with a B.S. in Computer Science
+Experience:  No professional experience, however I have some self-taught experience in python, java, sql
+Interests: I am very interested in AI, Machine learning and Data Analysis
+Facts to Consider: I am confident in my ability to learn fast
