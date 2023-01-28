@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import datetime
 
 import openai
-openai.api_key = "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"
+openai.api_key = "dont post the key"
 app = Flask(__name__)
 
 @app.route('/')
